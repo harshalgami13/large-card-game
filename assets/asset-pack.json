@@ -1,0 +1,33 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/image/Card-Back.png",
+                "type": "image",
+                "key": "Card-Back"
+            },
+            {
+                "url": "assets/image/Card-Front.png",
+                "type": "image",
+                "key": "Card-Front"
+            },
+            {
+                "url": "assets/image/game-bg.png",
+                "type": "image",
+                "key": "game-bg"
+            },
+            {
+                "url": "assets/image/main-panel.png",
+                "type": "image",
+                "key": "main-panel"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

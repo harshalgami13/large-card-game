@@ -1,0 +1,305 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "dc4273fe-71d7-4c08-8c6b-aa86f77e484e",
+            "label": "game_bg",
+            "components": [],
+            "texture": {
+                "key": "game-bg"
+            },
+            "x": 960,
+            "y": 540,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "2f413256-add8-4b00-a962-0f095caf35af",
+            "label": "main_panel",
+            "components": [],
+            "texture": {
+                "key": "main-panel"
+            },
+            "x": 960,
+            "y": 716,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Container",
+            "id": "214b960d-f8b6-430f-8fc4-66430592cfe5",
+            "label": "Card1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "8250bac6-b00e-4199-8dcd-8095ecae4ff3",
+                    "label": "card_Back_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Back"
+                    },
+                    "x": 435,
+                    "y": 751,
+                    "scaleX": 0,
+                    "scaleY": 0.25
+                },
+                {
+                    "type": "Text",
+                    "id": "f33fb462-72a7-49ee-a182-f5d48c94f2a9",
+                    "label": "text_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 431.5,
+                    "y": 751,
+                    "scaleX": 0,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "5",
+                    "fontFamily": "Sans-serif",
+                    "fontSize": "80px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Image",
+                    "id": "b67d8c2a-1d0a-49a6-89fc-c1be0af380f7",
+                    "label": "card_Front_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Front"
+                    },
+                    "x": 961,
+                    "y": 211,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b667b892-c6f1-4e6d-b598-280231f96e62",
+            "label": "Card2",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9fa85a72-28eb-4f3b-9866-d05ede6bbfb8",
+                    "label": "card_Back_2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Back"
+                    },
+                    "x": 695,
+                    "y": 751,
+                    "scaleX": 0,
+                    "scaleY": 0.25
+                },
+                {
+                    "type": "Text",
+                    "id": "53ea8284-b829-4bab-8acd-95a72b6ff070",
+                    "label": "text_2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 695,
+                    "y": 751,
+                    "scaleX": 0,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "5",
+                    "fontFamily": "Sans-serif",
+                    "fontSize": "80px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Image",
+                    "id": "4d16c0b2-f57e-44f8-b82c-667a0553438b",
+                    "label": "card_Front_2",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Front"
+                    },
+                    "x": 960,
+                    "y": 211,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4a0fa598-1b2b-4e05-acfa-b4fb05c9c8e2",
+            "label": "Card3",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "75bd0016-2c8e-4d73-ab39-7f896681676e",
+                    "label": "card_Back_3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Back"
+                    },
+                    "x": 956,
+                    "y": 751,
+                    "scaleX": 0,
+                    "scaleY": 0.25
+                },
+                {
+                    "type": "Text",
+                    "id": "99688ade-518d-4ff0-96e9-2d2b4c713d90",
+                    "label": "text_3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 956,
+                    "y": 751,
+                    "scaleX": 0,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "5",
+                    "fontFamily": "Sans-serif",
+                    "fontSize": "80px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Image",
+                    "id": "937eaf0a-c552-43f5-be86-0d490154b006",
+                    "label": "card_Front_3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Front"
+                    },
+                    "x": 960,
+                    "y": 211,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2c33a047-e6bf-42a5-87f9-8edd2f36bcc3",
+            "label": "Card4",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ad6d3b99-b1f7-4545-9f6d-260ff170790b",
+                    "label": "card_Back_4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Back"
+                    },
+                    "x": 1217,
+                    "y": 751,
+                    "scaleX": 0,
+                    "scaleY": 0.25
+                },
+                {
+                    "type": "Text",
+                    "id": "39ca2a47-1f91-4d3f-9d70-c2e2bf216ea1",
+                    "label": "text_4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1217,
+                    "y": 751,
+                    "scaleX": 0,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "5",
+                    "fontFamily": "Sans-serif",
+                    "fontSize": "80px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Image",
+                    "id": "0364edcd-7f35-4094-9160-81a4b0819ed3",
+                    "label": "card_Front_4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Front"
+                    },
+                    "x": 960,
+                    "y": 211,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "000b7cf9-3c8a-42b7-a48c-2f0e96951f9f",
+            "label": "Card5",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "d9c27e3c-e4fa-4514-92d7-8ff2f4a1be9f",
+                    "label": "card_Back_5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Back"
+                    },
+                    "x": 1478,
+                    "y": 751,
+                    "scaleX": 0,
+                    "scaleY": 0.25
+                },
+                {
+                    "type": "Text",
+                    "id": "d5433c92-b068-49f7-940f-398578943917",
+                    "label": "text_5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1478,
+                    "y": 751,
+                    "scaleX": 0,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "5",
+                    "fontFamily": "Sans-serif",
+                    "fontSize": "80px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Image",
+                    "id": "c38ef004-d91a-4f39-9527-61dfc10cf6dc",
+                    "label": "card_Front_5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Card-Front"
+                    },
+                    "x": 960,
+                    "y": 211,
+                    "scaleX": 0.25,
+                    "scaleY": 0.25
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
