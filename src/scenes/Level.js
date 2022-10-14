@@ -1,5 +1,6 @@
 
 // You can write more code here
+const tempArry = []
 
 /* START OF COMPILED CODE */
 
@@ -14,6 +15,7 @@ class Level extends Phaser.Scene {
 		this.card
 		this.cardBack
 		this.text
+		this.temp
 		this.arryX = [434, 695, 956, 1217, 1478]
 		/* END-USER-CTR-CODE */
 	}
@@ -43,7 +45,6 @@ class Level extends Phaser.Scene {
 		const text_1 = this.add.text(431.5, 751, "", {});
 		text_1.scaleX = 0;
 		text_1.setOrigin(0.5, 0.5);
-		text_1.text = "5";
 		text_1.setStyle({ "fontFamily": "Sans-serif", "fontSize": "80px", "fontStyle": "bold" });
 		card1.add(text_1);
 
@@ -66,7 +67,6 @@ class Level extends Phaser.Scene {
 		const text_2 = this.add.text(695, 751, "", {});
 		text_2.scaleX = 0;
 		text_2.setOrigin(0.5, 0.5);
-		text_2.text = "5";
 		text_2.setStyle({ "fontFamily": "Sans-serif", "fontSize": "80px", "fontStyle": "bold" });
 		card2.add(text_2);
 
@@ -89,7 +89,6 @@ class Level extends Phaser.Scene {
 		const text_3 = this.add.text(956, 751, "", {});
 		text_3.scaleX = 0;
 		text_3.setOrigin(0.5, 0.5);
-		text_3.text = "5";
 		text_3.setStyle({ "fontFamily": "Sans-serif", "fontSize": "80px", "fontStyle": "bold" });
 		card3.add(text_3);
 
@@ -112,7 +111,6 @@ class Level extends Phaser.Scene {
 		const text_4 = this.add.text(1217, 751, "", {});
 		text_4.scaleX = 0;
 		text_4.setOrigin(0.5, 0.5);
-		text_4.text = "5";
 		text_4.setStyle({ "fontFamily": "Sans-serif", "fontSize": "80px", "fontStyle": "bold" });
 		card4.add(text_4);
 
@@ -135,7 +133,6 @@ class Level extends Phaser.Scene {
 		const text_5 = this.add.text(1478, 751, "", {});
 		text_5.scaleX = 0;
 		text_5.setOrigin(0.5, 0.5);
-		text_5.text = "5";
 		text_5.setStyle({ "fontFamily": "Sans-serif", "fontSize": "80px", "fontStyle": "bold" });
 		card5.add(text_5);
 
@@ -202,18 +199,28 @@ class Level extends Phaser.Scene {
 	create() {
 		this.editorCreate();
 
-
+		this.i = 0
+		for (var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], i = a.length; i--;) {
+			if (this.i < 5) {
+				this.checkAction((this.i))
+				this.txt = this.text
+				this.txt.text = a.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
+				console.log(this.txt.text)
+				tempArry.push(parseInt(this.txt.text))
+				this.i++
+			}
+		}
 
 		for (this.i = 0; this.i < 5; this.i++) {
 			this.checkAction(this.i)
 			let tween = this.tweens.add({
 				targets: this.card,
 				ease: 'Back',
-				duration: 800,
+				// duration: 800,
 				repeat: 0,
 				x: this.arryX[this.i],
 				y: 751,
-				delay: (this.i) * 500
+				delay: (this.i) * 200
 			});
 		}
 
@@ -223,7 +230,7 @@ class Level extends Phaser.Scene {
 				let tween = this.tweens.add({
 					targets: this.card,
 					props: {
-						duration: 6000,
+						// duration: 800,
 						scaleX: 0
 					},
 					repeat: 0,
@@ -231,7 +238,7 @@ class Level extends Phaser.Scene {
 					// onComplete: this.tweenComplete(this.i),
 				})
 			}
-		}, 4000)
+		}, 1000)
 
 		setTimeout(() => {
 			for (this.i = 0; this.i < 5; this.i++) {
@@ -239,7 +246,7 @@ class Level extends Phaser.Scene {
 				let tweenText = this.tweens.add({
 					targets: this.text,
 					props: {
-						duration: 1000,
+						// duration: 100,
 						scaleX: 1
 					},
 					repeat: 0,
@@ -251,22 +258,45 @@ class Level extends Phaser.Scene {
 				let tweenCard = this.tweens.add({
 					targets: this.cardBack,
 					props: {
-						duration: 6000,
+						// duration: 100,
 						scaleX: 0.25
 					},
 					repeat: 0,
 					delay: (this.i) * 500
 				})
 			}
-		}, 5010)
+		}, 2000)
 
+
+		setTimeout(() => {
+			const index = tempArry.indexOf(Math.max(...tempArry));
+			this.i = index
+			this.checkAction(this.i)
+			let tweenMaxCard = this.tweens.add({
+				targets: this.cardBack,
+				props: {
+					duration : 1000,
+					ease: 'Linear',
+					x : 960,
+					y: 211
+				},
+				repeat: 0,
+				delay: 2000
+			})
+			let tweenMaxCardText = this.tweens.add({
+				targets: this.text,
+				props: {
+					duration : 1000,
+					ease: 'Linear',
+					x : 960,
+					y: 211
+				},
+				repeat: 0,
+				delay: 2000
+			})
+		}, 3500)
 	}
 
-	tweenComplete(i) {
-
-
-
-	}
 
 	checkAction(i) {
 		if (this.i === 0) this.card = this.card_Front_1

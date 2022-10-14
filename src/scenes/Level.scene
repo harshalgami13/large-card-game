@@ -65,7 +65,6 @@
                     "scaleX": 0,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "5",
                     "fontFamily": "Sans-serif",
                     "fontSize": "80px",
                     "fontStyle": "bold"
@@ -117,7 +116,6 @@
                     "scaleX": 0,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "5",
                     "fontFamily": "Sans-serif",
                     "fontSize": "80px",
                     "fontStyle": "bold"
@@ -169,7 +167,6 @@
                     "scaleX": 0,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "5",
                     "fontFamily": "Sans-serif",
                     "fontSize": "80px",
                     "fontStyle": "bold"
@@ -221,7 +218,6 @@
                     "scaleX": 0,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "5",
                     "fontFamily": "Sans-serif",
                     "fontSize": "80px",
                     "fontStyle": "bold"
@@ -273,7 +269,6 @@
                     "scaleX": 0,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "5",
                     "fontFamily": "Sans-serif",
                     "fontSize": "80px",
                     "fontStyle": "bold"
